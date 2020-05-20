@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Taller Android</string>
+
+    <string name="welcome_text">¡Bienvenidos al taller!</string>
 </resources>
