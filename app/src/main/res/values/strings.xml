@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">Taller Android</string>
 
-    <string name="welcome_text">¡Bienvenidos al taller!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_title">Trabajando con SWAPI</string>
+    <string name="personajes_button_string">Personajes</string>
+    <string name="planetas_button_string">Planetas</string>
+    <string name="naves_button_string">Naves</string>
+    <string name="personajes_title">PERSONAJES</string>
+    <string name="naves_title">NAVES</string>
+    <string name="planetas_title">PLANETAS</string>
 </resources>

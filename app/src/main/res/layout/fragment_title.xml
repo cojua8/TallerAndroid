@@ -18,10 +18,50 @@
             android:id="@+id/title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/welcome_text"
+            android:text="@string/main_title"
+            android:textAlignment="center"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <Button
+            android:id="@+id/personajes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{(id) -> TitleViewModel.navigateToFragment(id)}"
+            android:text="@string/personajes_button_string"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/naves_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_text" />
+
+        <Button
+            android:id="@+id/naves_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{(id) -> TitleViewModel.navigateToFragment(id)}"
+            android:text="@string/naves_button_string"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/planetas_button"
+            app:layout_constraintEnd_toEndOf="@+id/personajes_button"
+            app:layout_constraintStart_toStartOf="@+id/personajes_button"
+            app:layout_constraintTop_toBottomOf="@+id/personajes_button" />
+
+        <Button
+            android:id="@+id/planetas_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{(id) -> TitleViewModel.navigateToFragment(id)}"
+            android:text="@string/planetas_button_string"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/naves_button"
+            app:layout_constraintStart_toStartOf="@+id/naves_button"
+            app:layout_constraintTop_toBottomOf="@+id/naves_button" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -9,5 +9,30 @@
         android:id="@+id/titleFragment"
         android:name="mi.primer.tallerandroid.title.TitleFragment"
         android:label="fragment_title"
-        tools:layout="@layout/fragment_title" />
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment_to_personajesFragment"
+            app:destination="@id/personajesFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_navesFragment"
+            app:destination="@id/navesFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_planetasFragment"
+            app:destination="@id/planetasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personajesFragment"
+        android:name="mi.primer.tallerandroid.personajes.PersonajesFragment"
+        android:label="fragment_personajes"
+        tools:layout="@layout/fragment_personajes" />
+    <fragment
+        android:id="@+id/navesFragment"
+        android:name="mi.primer.tallerandroid.naves.NavesFragment"
+        android:label="fragment_naves"
+        tools:layout="@layout/fragment_naves" />
+    <fragment
+        android:id="@+id/planetasFragment"
+        android:name="mi.primer.tallerandroid.planetas.PlanetasFragment"
+        android:label="fragment_planetas"
+        tools:layout="@layout/fragment_planetas" />
 </navigation>
