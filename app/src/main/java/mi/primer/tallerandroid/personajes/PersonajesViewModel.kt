@@ -35,7 +35,6 @@ class PersonajesViewModel : ViewModel() {
             } catch (e: Exception) {
                 _properties.value = "Error en la obtencion de datos"
             }
-
         }
     }
 
